@@ -1,0 +1,22 @@
+---
+mccs:
+  - 1
+  - 2
+logs:
+  level: DEBUG
+  token: ~
+redcap:
+  custom_api: https://redcap.tacc.utexas.edu/api/vbr.php
+  token: ~
+tapis:
+  storage_system: a2cps.storage.community
+  path: /reports/blood
+  filename: blood
+  username: world
+  pem: READ
+links:
+  slackbot: y74G6DJORoAex
+  mailbot: y7zZM1K3q40KK
+workflow:
+  upload: True
+  notify: True
