@@ -52,8 +52,7 @@ def save_api(mcc: int, timestamp: str, r: object):
 
     try:
         r.logger.debug('Retrieving MCC {0} data from RedCAP'.format(mcc))
-        tok = os.environ.get('REDCAP_TOKEN',
-                             'F765A020ACF24FAA3E57566CC41DB60C')
+        tok = os.environ.get('REDCAP_TOKEN')
         headers = {'Token': tok}
         data = {'op': 'blood', 'mcc': mcc}
         resp = requests.post(r.settings.redcap.custom_api,
